@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>중간고사 과제</title>
+
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="js/slick.js"></script>
+
+    <style>
+        body {
+            min-width: 1260px;
+            background-color: #fffbf3;
+        }
+
+        #ttl {
+            font-size: 50px;
+            font-weight: bolder;
+        }
+
+        img {
+            display: block;
+            margin: 0px auto;
+        }
+
+        h1, h2, h4, #ttl {
+            text-align: center;
+        }
+
+        h6 {
+            text-align: right;
+        }
+
+        .pCss {
+            text-align: left;
+        }
+
+        table {
+            border: 1px solid #444444;
+            border-collapse: collapse;
+            text-align: center;
+            margin: auto;
+            width: 30%;
+        }
+
+        th, td {
+            border: 1px solid #444444;
+        }
+
+        tr:hover {
+            background-color: #F5F5F5;
+        }
+
+        .fontRed {
+            font-size: 20px;
+            color: red;
+            font-weight: bold;
+        }
+
+        .diagonal {
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><line x1="0" y1="0" x2="100%" y2="100%" stroke="gray" /></svg>');
+        }
+
+        #pie-chart {
+            width: 200px;
+            height: 200px;
+            background: conic-gradient(hotpink 0% 15%, orange 15% 45%, #f5da53 45% 100%);
+            border-radius: 50%;
+            margin: auto;
+        }
+
+        .outer {
+            text-align: center;
+        }
+
+        .inner {
+            margin: auto;
+            display: inline-block;
+        }
+    </style>
+
+    <script>
+        $(function () {
+            $('.single-item').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+            });
+        })
+    </script>
+</head>
+<body>
+
+<!-- stlye 은 slick 영역 확인용 -->
+<div style="padding:100px 100px; background-color: skyblue;">
+    <div class="single-item">
+        <div>
+            <p id="ttl">🧡우리집 아기사자 치즈를 소개합니다💛
+            <p><br/>
+                <img width="40%" style="border: 20px solid hotpink;" src="./img/치즈1.PNG"><br/><br/><br/>
+            <h1>치즈는 올해 9살이에요</h1><br/><br/><br/>
+        </div>
+        <div>
+            <h4>[강아지 나이 환산표]</h4>
+            <table>
+                <thead>
+                <tr>
+                    <th colspan="2">강아지 나이</th>
+                    <th colspan="3">사람 나이로 변환한 나이</th>
+                </tr>
+                <tr>
+                    <td>나이</td>
+                    <td>생애주기</td>
+                    <td>소형견</td>
+                    <td>중형견</td>
+                    <td>대형견</td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>2년</td>
+                    <td rowspan="3">청년기</td>
+                    <td>24살</td>
+                    <td>24살</td>
+                    <td>24살</td>
+                </tr>
+                <tr>
+                    <td>3년</td>
+                    <td>29살</td>
+                    <td>30살</td>
+                    <td>31살</td>
+                </tr>
+                <tr>
+                    <td>4년</td>
+                    <td>34살</td>
+                    <td>36살</td>
+                    <td>38살</td>
+                </tr>
+                <tr>
+                    <td>5년</td>
+                    <td rowspan="6">중장년기</td>
+                    <td>39살</td>
+                    <td>42살</td>
+                    <td>45살</td>
+                </tr>
+                <tr>
+                    <td>6년</td>
+                    <td>44살</td>
+                    <td>48살</td>
+                    <td>52살</td>
+                </tr>
+                <tr>
+                    <td>7년</td>
+                    <td>49살</td>
+                    <td>54살</td>
+                    <td>59살</td>
+                </tr>
+                <tr>
+                    <td>8년</td>
+                    <td>54살</td>
+                    <td>60살</td>
+                    <td>66살</td>
+                </tr>
+                <tr>
+                    <td class="fontRed">9년</td>
+                    <td class="fontRed">59살</td>
+                    <td>66살</td>
+                    <td>73살</td>
+                </tr>
+                <tr>
+                    <td>10년</td>
+                    <td>64살</td>
+                    <td>72살</td>
+                    <td>80살</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <h2>치즈는 사람나이로 59살이 되었어요</h2><br/><br/>
+            <h4>[강아지 평균 수명표]</h4>
+            <table>
+                <thead>
+                <tr>
+                    <th class="diagonal"></th>
+                    <th>평균수명</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <p>초소형견</p>
+                        <p>토이푸들,말티즈 등</p>
+                    </td>
+                    <td>약 13 ~ 14년</td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="fontRed">소형견</p>
+                        <p>시츄,포메라니안 등</p>
+                    </td>
+                    <td class="fontRed">약 14년 ~ 15년</td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>중형견</p>
+                        <p>웰시코기, 비글 등</p>
+                    </td>
+                    <td>약 14년</td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>대형견</p>
+                        <p>리트리버, 사모예드 등</p>
+                    </td>
+                    <td>약 12 ~ 13년</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <h2>치즈는 포메라니안이에요 평균수명 14 ~ 15년을 살수 있어요</h2>
+            <h2>치즈를 건강하게 키우기 위해 산책을 자주 시켜 주기로 했어요😥</h2><br/><br/>
+            <img width="35%" src="./img/치즈2.jpg"><br/><br/><br/>
+        </div>
+        <div>
+            <h4>[소련이네 치즈를 산책시키는 사람 순위 그래프]</h4>
+            <div class="outer">
+                <div id="pie-chart" style="display: inline-block"></div>
+                <div class="inner" style="padding-left: 70px;">
+                    <p style="color:#f5da53;">■</p>
+                    <p style="color:orange;">■</p>
+                    <p style="color:hotpink;">■</p>
+                </div>
+                <div class="inner">
+                    <p class="pCss">엄마</p>
+                    <p class="pCss">나</p>
+                    <p class="pCss">남동생</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <img width="30%" src="./img/치즈3.jpg">
+            <br/>
+            <h2>산책을 자주해서 행복해 하는 치즈에요</h2>
+            <h2>앞으로도 우리 가족이랑 오래오래 살자 치즈야💕</h2>
+            <h6>과제 끝!</h6>
+        </div>
+    </div>
+</div>
+</body>
+</html>
